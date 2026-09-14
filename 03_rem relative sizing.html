@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative percentage sizing.</title>
+    <style>
+        * {font-size:50px;}
+        #first
+        {background-color:burlywood;
+        font-size:25px;
+        height:400px;
+        width:400px;
+        }
+
+        #second
+        {background-color:rgb(123, 47, 255);
+        font-size:2rem;
+        /* rem - relative to the root element */
+        /* so here we have defined the root font-size as 50px as the rem means it will take reference of the root elemnt not with respect to the other elemnt  */
+        height:50%;
+        width:50%;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <h2>this is relative sizing via percentage.
+    </h2>
+    <br>
+    <hr>
+    <br>
+    <div id = "first">box1
+    <div id = "second">box2</div>
+    </div>
+
+
+</body>
+</html>

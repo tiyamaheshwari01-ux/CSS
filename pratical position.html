@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position property</title>
+    <style>
+        *{margin:0; padding:0;}
+        .class{background-color:blueviolet; 
+             margin:5px; height:100px;
+             width:100px;}
+        #first
+        {position:static;
+        }
+
+        #second
+        {position:relative; top:20px;left:50px
+       }
+
+        #third
+        {position:fixed;
+            /* also helps to mek the lement scrollable this remains fixed no effect from scrolling */
+
+        /* the main difference between the overlapping by absolut and the overlapping by the fixed it it remains fixed on the screen and dont overlap anything and dont scrool on scrolling 
+        BUT
+        the absolute does that it overlap the element such a way that element overlap but stays at the absolute position but than also scroll upside when scrolled with those element only. */
+        }
+
+        #fourth
+        {position:absolute;
+        top:20px;}
+        /* in the also the element come out of the box the only reason why the box four took place of the box three */
+        /* the alsolute help us to make the elment overlap over one another and after assigning a absolute position on the page and then on furthur scroll it is overlaped only and scrolled togther*/
+
+       /* / absolute is painted wrt to the parents position a level up */
+        
+        
+    </style>
+</head>
+<body>
+    <div id = "first"class="box" >box1</div>
+    <div id = "second" class="box">box2</div>
+    <div id = "third" class="box">box3</div>
+    <div id = "fourth" class="box">box4</div>
+</body>
+</html>

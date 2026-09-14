@@ -1,0 +1,58 @@
+<!-- about the Z INDEX
+
+
+• Stacking Order: Determines the stacking order of elements along the Z-axis.
+• Position Context: Only applies to elements with position set to
+  relative, absolute, fixed, or sticky.
+• Integer Values: Accepts integer values, including negative numbers.
+• Higher Values: An element with a higher z-index value appears
+  above others. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Z-Index</title>
+    <link rel="stylesheet" href="z-index.css">
+</head>
+<style>
+.container {
+    position: relative;
+}
+
+.box1,
+.box2 {
+    position: absolute;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.box1 {
+    background-color: red;
+    left: 20px;
+    top: 60px;
+    z-index: 2;
+    /* here the index of z defines that which elemnt would be overlapped on what element which we want to do willingly and this is how we can overlap the man chaha element */ 
+
+    /* it like in asening over the other like 2 over 1, 3 over 2 like this. */
+}
+
+.box2 {
+    background-color: aqua;
+    left: 60px;
+    top: 20px;
+    z-index: 1;
+}
+</style>
+<body>
+
+    <div class="container">
+        <div class="box1">Z-index 2</div>
+        <div class="box2">Z-index 1</div>
+    </div>
+
+</body>
+</html>
