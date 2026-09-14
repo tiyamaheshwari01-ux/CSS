@@ -1,0 +1,42 @@
+<!-- 10. Color System (Alpha Channel)
+
+• RGBA: RGB's extension, includes alpha for opacity control (0-1 range).
+
+• Transparency Control: Facilitates the adjustment of transparency levels in colors.
+
+• Visual Effects: Enables the creation of visual effects like shadows and overlays.
+
+•######## Layering: Assists in layering elements with varying degrees of visibility.
+
+0.0  rgba(255, 0, 0, 0.0)  fully transparent
+0.2  rgba(255, 0, 0, 0.2)
+0.4  rgba(255, 0, 0, 0.4)
+0.6  rgba(255, 0, 0, 0.6)
+0.8  rgba(255, 0, 0, 0.8)
+1.0  rgba(255, 0, 0, 1.0)  fully opaque -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   #one {color:rgba(55, 56, 50, 0.1);}
+   #second {color:rgba(55, 56, 50, 0.3);}
+   #third {color:rgba(55, 56, 50, 0.6);}
+   #fourth {color:rgba(55, 56, 50, 0.9);}
+</style>
+<body>
+    <h2>This is how we use alpha chanel primarily for the pupose of overlapping</h2>
+    <br>
+    <hr>
+    <br>
+    <div id ="one">Lorem ipsum dolor sit amet</div>
+    <div id ="second">Lorem ipsum dolor sit amet</div>
+    <div id ="third">Lorem ipsum dolor sit amet</div>
+    <div id ="fourth">Lorem ipsum dolor sit amet</div>
+</body>
+</html>
