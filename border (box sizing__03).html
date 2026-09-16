@@ -1,0 +1,53 @@
+<!-- the box sizing -->
+
+
+<!-- there a problem arises that after we give the padding and the and the border the total sizeof the bow increases and the the web page as we panned as per the dimensions the page use to lose the beutification so to make it correct we define the box size so that whatever padding or border define despite of that as per box sixe it will manage the content and bring tha box size to given one. -->
+
+<!-- the height is defined for the complete box not just for the content just that we we dont defined the type of box the css taks it as the it is as the height and width of the content but whe we are defining the the box as " border box" the css take dimensions as the complete till the border . -->
+
+<!-- so by default - content box 
+   by choice - border box -->
+
+
+<!-- in the border property the type is box is not defined so the output is with showing dimensions as content box.
+
+
+
+BUT here below you can see the diffrence how it look like when we add on the content box. --><!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .pad{
+            height: 50px;
+            width: 50px;
+            padding: 2px;
+            margin: 5px;
+            
+        }
+
+        #first{
+            background-color: slateblue;
+            border: 2px solid;
+            box-sizing: border-box;
+        }
+
+        #second{
+            background-color: mediumorchid;
+            border: 4px dashed red;
+             box-sizing: content-box;
+        }
+        /* in the above there two different box properties mentioned above and in output you can clearly find that what is difference in the content  box and border box . */
+    </style>
+</head>
+<body>
+
+    <div id="first" class="pad">First</div>
+    <div id="second" class="pad">Second</div>
+
+</body>
+</html>

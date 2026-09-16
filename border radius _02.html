@@ -1,0 +1,45 @@
+<!-- border property
+the border is afocurse the same for all side not any direction for this and thisis again counted in the total dimnesions of the box like of padding and unlike of margin.
+
+
+the thing toh unstand is is we might define the margin after the border it just space between the elemnet but actual property counted after tha paddind is border only. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .pad{
+            height: 50px;
+            width: 50px;
+            padding: 2px;
+            margin: 5px;
+        }
+
+        #first{
+            background-color: slateblue;
+            border: 2px solid;
+            /* the boder radius property is to define the fineness of the cornners and the curvature of the corner to make a soft corners
+
+
+             this property is also defined clock wise we can define different border radius for all different corners. */
+            border-radius: 5px 20px 5px 5px;
+        }
+
+        #second{
+            background-color: mediumorchid;
+            border: 4px dashed red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="first" class="pad">First</div>
+    <div id="second" class="pad">Second</div>
+
+</body>
+</html>
