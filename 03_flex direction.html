@@ -1,0 +1,68 @@
+<!-- THE FLEX BOX  direction: telles us what will the direction of the content.-->
+
+<!-- flex box is the one dimentional layout mentions which can either be gives in rows or the columns 
+ the items flex expand to fill the space else shrink to fit in the container.
+
+ a containder can be seen as out side the segments and inside that items or whatevern you wanna put in you can also see image. -->
+
+
+ <!-- THE MAIN AXIS
+  the main axis is such a away that the direction in which we want to arrange the item might be 
+  1.top to bottonm
+  2.left to right
+  depending upon what you take as the main one the other one becomes the cross axis. -->
+
+<!-- the default value in the flex box is row -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex direction</title>
+    <style>
+        *{ padding:0;}
+    .box
+    {height:100px;
+    width:100px;
+/* the items flex expand to fill the space else shrink to fit in the container. */
+
+ /* this is the property of the flex box which help us to make the reasponsvie web site even the sixe will be much greter tha the the actual space the box gonna skhrink as per the actual space/area aviable   . here you can increse the height and width of the box  and cheak out in the output */
+    border: 3px solid black;
+    margin:5px;}
+    #container
+    {
+        height: 600px;
+        width:600px;
+        padding:10px;
+        margin:10px;
+        border:3px solid black;
+        background-color: darkgrey;
+
+
+        display:flex;
+        flex-direction: column-reverse;
+
+    }
+
+
+#box1 {background-color: aqua;}
+#box2 {background-color: blueviolet;}
+#box3 { background-color: yellow;}
+#box4 {background-color: tomato;}
+
+
+    </style>
+ </head>
+ <body>
+    <h2 id  ="head">flex direction</h2>
+    <hr>
+    <div id = "container">
+        <div id ="box1" class ="box"> box1</div>
+        <div id ="box2" class ="box"> box2</div>
+        <div id ="box3" class ="box"> box3</div>
+        <div id ="box4" class ="box"> box4</div>
+    </div>
+
+    
+ </body>
+ </html>

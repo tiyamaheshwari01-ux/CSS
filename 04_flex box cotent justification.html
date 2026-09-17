@@ -1,0 +1,64 @@
+<!-- justification of content by different properties of flux
+ basically justtifacation of content helps us to manage the spaces between the content. -->
+
+
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex direction</title>
+    <style>
+        *{ padding:0;}
+    .box
+    {height:100px;
+    width:100px;
+    border: 3px solid black;
+    margin:5px;}
+    #container
+    {
+        height: 600px;
+        width:600px;
+        padding:10px;
+        margin:10px;
+        border:3px solid black;
+        background-color: darkgrey;
+
+
+        display:flex;
+        justify-content:space-between;
+         /* here the direction is still by default row only */
+        /* all the abbove mentionedy value are those which can be gives as the value the justify-content property of the flex and it justify such a way that it dont reverse the text in any single value if this attribute. */
+
+
+/* 
+<!-- Here's the text from the image:
+Alignment: Aligns flex items along the main axis.
+flex-start: Items align to the start of the flex container.
+flex-end: Items align to the end of the flex container.
+Center: Items are centered within the flex container.
+space-between/space-around/space-evenly: Distributes space between items evenly. --> */
+    }
+
+
+#box1 {background-color: aqua;}
+#box2 {background-color: blueviolet;}
+#box3 { background-color: yellow;}
+#box4 {background-color: tomato;}
+
+
+    </style>
+ </head>
+ <body>
+    <h2 id  ="head">justify content.</h2>
+    <hr>
+    <div id = "container">
+        <div id ="box1" class ="box"> box1</div>
+        <div id ="box2" class ="box"> box2</div>
+        <div id ="box3" class ="box"> box3</div>
+        <div id ="box4" class ="box"> box4</div>
+    </div>
+
+    
+ </body>
+ </html>

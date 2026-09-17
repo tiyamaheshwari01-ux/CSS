@@ -1,0 +1,67 @@
+<!-- ALIGHN CONTENT -->
+
+<!-- this is like justify content as it ws in the main axis but this is along with the cross axis 
+same wasy it dont allow any remdent spaces in between spaces.
+what about align  class="it was just about alignment of the item but not about the not spacing here the non sense spacing will also be figues out like you see in thw where justify coneten and align content is use the space and then after applying align content. -->
+
+
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex direction</title>
+    <style>
+        *{ padding:0;}
+    .box
+    {height:100px;
+    width:100px;
+    border: 3px solid black;
+    margin:5px;}
+
+
+
+    #container
+    
+       { height: 600px;
+        width:600px;
+        padding:10px;
+        margin:10px;
+        border:3px solid black;
+        background-color: darkgrey;
+
+
+        display:flex;
+        justify-content:center;
+         /* (this is for main axis)} */
+        align-items: center;
+         /* (this is for cross axis alignment of the items. but not about the spacing with aligment that is taken care by align content.)} */
+        align-content:start;
+        flex-wrap: wrap;}
+   
+
+    
+
+
+    
+#box1 {background-color: aqua;}
+#box2 {background-color: blueviolet;}
+#box3 { background-color: yellow;}
+#box4 {background-color: tomato;}
+
+
+    </style>
+ </head>
+ <body>
+    <h2 id  ="head">content alignment.</h2>
+    <hr>
+    <div id = "container">
+        <div id ="box1" class ="box"> box1</div>
+        <div id ="box2" class ="box"> box2</div>
+        <div id ="box3" class ="box"> box3</div>
+        <div id ="box4" class ="box"> box4</div>
+    </div>
+
+    
+ </body>
+ </html>

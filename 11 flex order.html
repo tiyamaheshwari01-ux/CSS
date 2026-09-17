@@ -1,0 +1,61 @@
+<!-- FLEX order
+we over write the order of the elements which is by default given in the document as per oit requirment 
+-->
+ 
+
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rewriting the order</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    height: 75px;
+    width: 75px;
+    border: 3px solid black;
+    margin: 5px;
+}
+
+#heading{
+    text-align: center;
+}
+
+#container{
+    height: 300px;
+    width: 600px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+    background-color: lavender;
+
+    display: flex;
+    justify-content: center;
+}
+
+#box1{background-color: aqua; order:4;}
+#box2{background-color: blueviolet; order:3;}
+#box3{background-color: yellow; order:2;}
+#box4{ background-color: tomato;order:1;}
+/* this helps us to change the order of the default which is given in document */
+
+    </style>
+ </head>
+ <body>
+    <h2 id  ="head">this is overwiting the order.</h2>
+    <hr>
+    <div id = "container">
+        <div id ="box1" class ="box"> box1</div>
+        <div id ="box2" class ="box"> box2</div>
+        <div id ="box3" class ="box"> box3</div>
+        <div id ="box4" class ="box"> box4</div>
+    </div>
+
+    
+ </body>
+ </html>

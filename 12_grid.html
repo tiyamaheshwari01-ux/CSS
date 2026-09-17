@@ -1,0 +1,66 @@
+<!-- TTHE GRID SYSTEM IN CSS -->
+
+
+
+<!-- here we are taling about the grip systme in css which is twi dimentional in nature more of we use th flex box multipbe timeas compaired to the grid system since this become more complex. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>here testing the grid system</title>
+    <style>
+        *{ padding:0;}
+        .container{
+            height: 600px;
+            width:600px;
+            padding:10px;
+            margin:10px;
+            border:3px solid black;
+            background-color: darkgrey;
+
+            display:grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+
+        }
+
+        #box1{background-color: aqua;
+        grid-column: 1/2;
+        grid-row: 1/2;}
+
+
+        #box2{background-color: pink;
+        grid-column: 2/2;
+        grid-row: 1/2;}
+
+
+
+        #box3{background-color:blueviolet;
+        grid-column: 1/2;
+        grid-row: 2/2;}
+
+
+
+        #box4{background-color:yellow;
+        grid-column: 2/2;
+        grid-row: 2/2;}
+
+
+
+
+    </style>
+</head>
+<body>
+    <h2>the grid system in css.</h2>
+    <hr>
+    <br>
+    <div class = "container">
+        <div id ="box1" class ="box"> box1</div>
+        <div id ="box2" class ="box"> box2</div>
+        <div id ="box3" class ="box"> box3</div>
+        <div id ="box4" class ="box"> box4</div>
+    </div>
+</body>
+</html>

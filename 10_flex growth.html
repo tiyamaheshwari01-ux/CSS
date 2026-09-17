@@ -1,0 +1,60 @@
+<!-- flex growth -->
+
+<!-- this is like growth a particular element  growth as the same way it acts as the shrink element.  -->
+
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>growth of any element</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    height: 75px;
+    width: 75px;
+    border: 3px solid black;
+    margin: 5px;
+}
+
+#heading{
+    text-align: center;
+}
+
+#container{
+    height: 300px;
+    width: 600px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+    background-color: lavender;
+
+    display: flex;
+    justify-content: center;
+}
+
+#box1{background-color: aqua;}
+#box2{background-color: blueviolet; flex-grow:4;}
+#box3{background-color: yellow;}
+#box4{ background-color: tomato;}
+
+
+    </style>
+ </head>
+ <body>
+    <h2 id  ="head">The growth on a specific on element.</h2>
+    <hr>
+    <div id = "container">
+        <div id ="box1" class ="box"> box1</div>
+        <div id ="box2" class ="box"> box2</div>
+        <div id ="box3" class ="box"> box3</div>
+        <div id ="box4" class ="box"> box4</div>
+    </div>
+
+    
+ </body>
+ </html>

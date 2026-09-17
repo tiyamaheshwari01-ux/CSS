@@ -1,0 +1,96 @@
+<!-- this is about the float property -->
+
+<!-- 1.Element Alignment: Allows elements to be aligned to the left or right within their containing element.
+2.Values: Can take values like "left", "right", or "none" to determine the floating direction.
+3.Old Layout Technique: Less commonly used with the advent of Flexbox. -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float property</title>
+    <style>
+  
+.zero
+{
+    float: left;
+
+<!-- When all child elements are floated, the parent container may collapse. Use a clearfix or overflow: auto. -->
+
+
+    <!-- width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+
+ .one {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+.two {
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+}
+    </style>
+</head>
+<body>
+   <div id ="zero" class = " box">box0</div> 
+   <div id ="one" class = " box">box1</div> 
+   <div id ="two" class = " box">box2</div> 
+</body>
+</html> --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Float Property</title>
+
+<style>
+.container {
+    border: 2px solid black;
+    padding: 10px;
+    overflow: auto;
+}
+
+.zero {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+.one {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+.two {
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="zero">Box 0</div>
+    <div class="one">Box 1</div>
+    <div class="two">Box 2</div>
+</div>
+
+</body>
+</html>
