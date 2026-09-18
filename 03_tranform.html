@@ -1,0 +1,79 @@
+<!-- TRANFORM(allows modification of any elemnet in shape and position might be 3d or 2d .)
+
+the tranfom feature helps us in the making it more dynamic lsuc as bending them at different angles, scaling them up and down, skewing them and rotating them. it is used to make the website more attractive and eye catching. it is also used to make the website more user friendly and interactive. usinf this attribute. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transformation</title>
+    <style>
+        .container
+        {background-color: lightblue;
+        border: solid 1px black;
+         height: 500px;
+         width: 500px;
+         
+        
+        }
+
+        #box1
+        { background-color: red;
+          border: solid 1px black;
+          height: 60px;
+          width: 50px;
+         
+        }
+
+        #box1:hover
+        { transform: rotate(45deg);}
+ 
+
+        #box2
+        { background-color: blue;
+          border: solid 1px black;
+          height: 60px;
+          width: 50px;
+         
+        }
+         #box2:hover
+        { transform: rotate(90deg);}
+
+        #box3
+        { background-color: green;
+          border: solid 1px black;
+          height: 60px;
+          width: 50px;
+         
+        }
+          #box3:hover
+          { transform: rotate(180deg);}
+
+        #box4
+        { background-color: yellow;
+          border: solid 1px black;
+          height: 60px;
+          width: 50px;
+         }
+           #box4:hover
+           { transform: rotate(270deg);
+        }
+    </style>
+</head>
+<body>
+    <h2>transformation</h2>
+    <hr>
+    <br>
+    <div class="container">
+        <div id ="box1"> box1(45 degree)</div>
+        <br>
+        <div id ="box2"> box2(90 degree)</div>
+        <br>
+        <div id ="box3"> box3(180 degree)</div>
+        <br>
+        <div id ="box4"> box4(270 degree)</div>
+
+    </div>
+</body>
+</html>

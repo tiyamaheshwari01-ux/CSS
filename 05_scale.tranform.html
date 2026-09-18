@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scale in traform</title>
+        
+    <style>
+        .box {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#box1 {background-color: lime;}
+#box1:hover {transform: scale(2);}
+
+#box2 {background-color: blueviolet;}
+#box2:hover {transform: scale(4);}
+
+#box3 {background-color: indianred;}
+#box3:hover {transform: scaleX(2);}
+
+#box4 {background-color: violet;}
+#box4:hover {transform: scaleY(3);}
+    </style>
+        
+
+   
+</head>
+<body>
+<h2>scale in transform</h2>
+<hr>
+<div id="box1" class="box">b1</div>
+<div id="box2" class="box">b2</div>
+<div id="box3" class="box">b3</div>
+<div id="box4" class="box">b4</div>
+</body>
+</html>
